@@ -1,0 +1,26 @@
+# 使用for迴圈印出99乘法表
+#(Hint. 使用兩層for迴圈)
+
+A = function(data){
+	result = 0
+	for(i in 1:length(data)){
+		x = mean(data)
+		result = result + (data[i]-x)**2
+		
+	}
+	result = result/(length(data)-1)
+	
+	return(result)
+}
+
+
+# 寫出一函數，供使用者輸入數列後，計算該數列的樣本變異數
+#(Hint. 可使用mean())
+
+for(i in 1:9){
+	for(j in 1:9){
+	z=i*j
+	cat(i,"*",j,"=",z," ")
+}
+	cat("\n")
+}	
